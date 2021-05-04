@@ -1,3 +1,6 @@
+// Libreria creada por Andreas Haller
+// Para la https://tribumaker.com/
+
 #include <ESP8266WiFi.h>      // Librería que nos da capacidades WiFi.
 #include <ESP8266WebServer.h> // Librería que nos permite crear y manejar un servidor.
 #include <mi_wifi.h>    // Esta librería contiene nuestras credenciales WiFi
@@ -21,7 +24,8 @@ void setup() {
     Serial.print(".");
   }
 
-  // Una vez conectados, vamos a mostrar nuestra direccion IP para poder conectarnos.
+  // Una vez conectados, vamos a mostrar por Puerto Serie
+  //la direccion IP que nos asigno el Router de nuestra casa
   Serial.println("Conectado!");
   Serial.print("Nuestra IP es: ");
   Serial.println(WiFi.localIP());
