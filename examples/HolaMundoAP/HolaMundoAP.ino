@@ -1,3 +1,6 @@
+// Libreria creada por Andreas Haller
+// Para la https://tribumaker.com/
+
 #include <ESP8266WiFi.h>      // Librería que nos da capacidades WiFi.
 #include <ESP8266WebServer.h> // Librería que nos permite crear y manejar un servidor.
 
@@ -10,7 +13,8 @@ void setup() {
   WiFi.softAP("ESP8266");    // Ponemos que nombre queremos que tenga la red (creara una red abierta sin contraseña)
 
   Serial.println("Red creada!");
-  Serial.println("Busca el nombre de la red en tu dispositivo y conectate.");
+  Serial.println("Abre y escanea con tu dispositivo WIFI.");
+  Serial.println("Cuando encuentres la RED >ESP8266< conectate a ella.");
   Serial.print("Luego abre la IP: ");
   Serial.print(WiFi.softAPIP());
   Serial.println(" en tu navegador");
