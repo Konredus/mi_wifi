@@ -4,8 +4,8 @@
 #include <ESP8266WiFi.h>      // Librería que nos da capacidades WiFi.
 
 // Agregamos nuestras credenciales de WiFi a las variables
-const char* ssid = "MiNombreDeRed";
-const char* password = "MiContraseña";
+const char ssid[] = "MiNombreDeRed";
+const char password[] = "MiContraseña";
 
 void setup() {
   Serial.begin(115200);     // Iniciamos el puerto serial
